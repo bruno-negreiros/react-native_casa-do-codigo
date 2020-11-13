@@ -1,6 +1,6 @@
 import { StatusBar } from 'expo-status-bar';
+import { StyleSheet, View } from 'react-native';
 import React from 'react';
-import { StyleSheet, Text, View } from 'react-native';
 import HelloWorld from './components/HelloWorld';
 
 export default function App() {
