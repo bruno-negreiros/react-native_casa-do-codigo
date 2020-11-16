@@ -2,13 +2,16 @@ import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, View } from 'react-native';
 import React from 'react';
 import HelloWorld from './components/HelloWorld';
+import FixedDimensions from './components/FixedDimensions';
 
 export default function App() {
   return (
-    <View style={styles.container}>
-      <HelloWorld text="World"></HelloWorld>
-      <StatusBar style="auto" />
-    </View>
+    // <View style={styles.container}>
+    //   <HelloWorld text="World"></HelloWorld>
+    //   <FixedDimensions></FixedDimensions>
+    //   <StatusBar style="auto" />
+    // </View>
+    <FixedDimensions></FixedDimensions>
   );
 }
 
