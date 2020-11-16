@@ -1,13 +1,13 @@
 import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, View } from 'react-native';
 import React from 'react';
-import Event from './components/Event';
+import UserGithub from './components/UserGithub';
 
 export default function App() {
   return (
     <View style={styles.container}>
       <StatusBar style="auto" />
-      <Event></Event>
+      <UserGithub></UserGithub>
     </View>
   );
 }

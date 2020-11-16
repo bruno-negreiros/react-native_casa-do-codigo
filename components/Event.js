@@ -2,9 +2,18 @@ import React from "react";
 import { View, Text, TextInput, StyleSheet } from "react-native";
 
 export default class Event extends React.Component {
-  state = {
-    input: "O React Native é demais!",
-  };
+  constructor(props) {
+    super(props);
+    this.state = {
+      input: '',
+    };
+
+    this.changeInput = this.changeInput.bind(this);
+  }
+
+  changeInput(input) {
+    this.setState({input});
+  }
 
   render() {
     return (
@@ -13,7 +22,8 @@ export default class Event extends React.Component {
         <TextInput
           style={styles.input}
           value={this.state.input}
-          onChangeText={(input) => this.setState({input})}></TextInput>
+          onChangeText={this.changeInput}>
+        </TextInput>
       </View>
     );
   }
