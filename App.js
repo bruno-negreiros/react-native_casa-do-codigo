@@ -1,17 +1,14 @@
 import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, View } from 'react-native';
 import React from 'react';
-import HelloWorld from './components/HelloWorld';
-import FixedDimensions from './components/FixedDimensions';
+import CzechNumber from './components/CzechNumber';
 
 export default function App() {
   return (
-    // <View style={styles.container}>
-    //   <HelloWorld text="World"></HelloWorld>
-    //   <FixedDimensions></FixedDimensions>
-    //   <StatusBar style="auto" />
-    // </View>
-    <FixedDimensions></FixedDimensions>
+    <View style={styles.container}>
+      <CzechNumber number={2}></CzechNumber>
+      <StatusBar style="auto" />
+    </View>
   );
 }
 
