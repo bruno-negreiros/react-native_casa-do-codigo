@@ -1,13 +1,13 @@
 import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, View } from 'react-native';
 import React from 'react';
-import CzechNumber from './components/CzechNumber';
+import Event from './components/Event';
 
 export default function App() {
   return (
     <View style={styles.container}>
-      <CzechNumber number={2}></CzechNumber>
       <StatusBar style="auto" />
+      <Event></Event>
     </View>
   );
 }
